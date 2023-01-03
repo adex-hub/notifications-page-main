@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Notifications <span class="notif-count">3</span></h1>
+
+      <p>Mark all as read</p>
+    </header>
+
+    <main>
+      <div class="notif1 notif active">
+        <img src="assets/images/avatar-mark-webber.webp" alt="mark-webber" />
+        <div class="right-aligned">
+          <div class="info-text">
+            <p>
+              <span class="bold">Mark Webber</span>
+              reacted to your recent post
+              <span
+                class="bold blue"
+                >My first tournament today!</span
+              >
+            </p>
+
+            <div class="reddot"></div>
+          </div>
+          <p class="time-stamp">1m ago</p>
+        </div>
+      </div>
+
+      <div class="notif2 notif active">
+        <img src="assets/images/avatar-angela-gray.webp" alt="angela-gray" />
+        <div class="right-aligned">
+          <div class="info-text">
+            <p><span class="bold">Angela Gray</span> followed you</p>
+            <div class="reddot"></div>
+          </div>
+          <p class="time-stamp">5m ago</p>
+        </div>
+      </div>
+
+      <div class="notif3 notif active">
+        <img
+          src="assets/images/avatar-jacob-thompson.webp"
+          alt="jacob-thompson"
+        />
+
+        <div class="right-aligned">
+          <div class="info-text">
+            <p>
+              <span class="bold">Jacob Thompson </span>
+              has joined your group
+              <span class="bold blue">Chess Club</span>
+            </p>
+            <div class="reddot"></div>
+          </div>
+          <p class="time-stamp">1 day ago</p>
+        </div>
+      </div>
+
+      <div class="notif4 notif">
+        <img
+          src="assets/images/avatar-rizky-hasanuddin.webp"
+          alt="rizky-hasanuddin"
+        />
+        <div class="right-aligned">
+          <span class="bold">Rizky Hasanuddin</span>
+          sent you a private message
+          <p class="time-stamp">5 days ago</p>
+          <div class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+      </div>
+
+      <div class="notif5 notif">
+        <div class="picandperson">
+          <img
+            src="assets/images/avatar-kimberly-smith.webp"
+            alt="kimberly-smith"
+            style="object-fit: contain; transform: scale(0.6)"
+          />
+
+          <div class="right-aligned">
+            <span class="bold">Kimberly Smith</span>
+            commented on your picture
+            <p class="time-stamp">1 week ago</p>
+          </div>
+        </div>
+
+        <img src="assets/images/image-chess.webp" alt="chess-img" />
+      </div>
+
+      <div class="notif6 notif">
+        <img
+          src="assets/images/avatar-nathan-peterson.webp"
+          alt="avatar-nathan-peterson"
+        />
+
+        <div class="right-aligned">
+          <span class="bold">Nathan Peterson</span>
+          reacted to your recent post 5 end-game strategies to increase your win
+          rate
+          <p class="time-stamp">2 weeks ago</p>
+        </div>
+      </div>
+
+      <div class="notif7 notif">
+        <img src="assets/images/avatar-anna-kim.webp" alt="anna-kim" />
+
+        <div class="right-aligned">
+          <span class="bold">Anna Kim</span>
+          left the group <span class="bold blue">Chess Club</span>
+          <p class="time-stamp">2 weeks ago</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adeola</a>.
+    </div>
+  </body>
+</html>

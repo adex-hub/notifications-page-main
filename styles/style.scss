@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+// Variables for the colours
+$white: hsl(0, 0%, 100%);
+$v-light_gray: hsl(210, 60%, 98%);
+$light_gray1: hsl(211, 68%, 94%);
+$light_gray2: hsl(205, 33%, 90%);
+$grayish_blue: hsl(219, 14%, 63%);
+$dark_grayblue: hsl(219, 12%, 42%);
+$dark_blue: hsl(224, 21%, 14%);
+// Primary Colours
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+
+//ACTUAL STYLING
+body{
+    padding: 0 50px;
+}
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    display: flex;
+    align-items: center;
+    color: $dark_blue;
+    .notif-count {
+      font-size: 20px;
+      background: $blue;
+      color: $white;
+      padding: 0px 10px;
+      border-radius: 5px;
+      height: 100%;
+      margin: 0 0 0 15px;
+    }
+  }
+  p {
+    color: $dark_grayblue;
+    cursor: pointer;
+    transition: .2s;
+  }
+  p:hover{
+    color: $blue;
+  }
+}
+
+main {
+//   padding: 0 20px;
+  color: $dark_grayblue;
+  .notif {
+    padding: 20px;
+    margin: 0 0 10px 0;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .notif > img {
+    object-fit: contain;
+    transform: scale(0.6);
+  }
+  .bold {
+    font-weight: 800;
+    color: $dark_blue;
+    transition: .2s;
+  }
+  .bold:hover{
+    color: $blue;
+  }
+  .time-stamp {
+    color: $grayish_blue;
+  }
+  .blue {
+    color: $grayish_blue;
+    transition: .2s;
+  }
+  .blue:hover{
+    color: $blue;
+  }
+
+  .active {
+    background: $v-light_gray;
+    border-radius: 10px;
+    .info-text {
+      display: flex;
+      align-items: baseline;
+      .reddot {
+        background: $red;
+        min-width: 10px; //Min width and min height are used to prevent the dot from squishing.
+        min-height: 10px;
+        border-radius: 10px;
+        margin: 0 0 0 5px;
+      }
+    }
+  }
+  .notif4 {
+    align-items: flex-start;
+    .message {
+      border: $light_gray2 1.5px solid;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px 0 0 0;
+      transition: .2s;
+    }
+    .message:hover{
+        background: $light_gray2;
+    }
+  }
+  .notif5 {
+    justify-content: space-between;
+    .picandperson {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+@media(max-width: 490px){
+    body{
+        padding: 0 10px;
+    }
+}

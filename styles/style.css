@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  padding: 0 50px;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+  color: hsl(224deg, 21%, 14%);
+}
+header h1 .notif-count {
+  font-size: 20px;
+  background: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 0px 10px;
+  border-radius: 5px;
+  height: 100%;
+  margin: 0 0 0 15px;
+}
+header p {
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+header p:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+main {
+  color: hsl(219deg, 12%, 42%);
+}
+main .notif {
+  padding: 20px;
+  margin: 0 0 10px 0;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+}
+main .notif > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scale(0.6);
+}
+main .bold {
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+  transition: 0.2s;
+}
+main .bold:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+main .time-stamp {
+  color: hsl(219deg, 14%, 63%);
+}
+main .blue {
+  color: hsl(219deg, 14%, 63%);
+  transition: 0.2s;
+}
+main .blue:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+main .active {
+  background: hsl(210deg, 60%, 98%);
+  border-radius: 10px;
+}
+main .active .info-text {
+  display: flex;
+  align-items: baseline;
+}
+main .active .info-text .reddot {
+  background: hsl(1deg, 90%, 64%);
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 10px;
+  margin: 0 0 0 5px;
+}
+main .notif4 {
+  align-items: flex-start;
+}
+main .notif4 .message {
+  border: hsl(205deg, 33%, 90%) 1.5px solid;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px 0 0 0;
+  transition: 0.2s;
+}
+main .notif4 .message:hover {
+  background: hsl(205deg, 33%, 90%);
+}
+main .notif5 {
+  justify-content: space-between;
+}
+main .notif5 .picandperson {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 490px) {
+  body {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
