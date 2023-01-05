@@ -111,4 +111,15 @@ main .notif5 .picandperson {
   body {
     padding: 0 10px;
   }
+  header {
+    padding: 0 20px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header h1 .notif-count {
+    font-size: 18px;
+    padding: 0 5px;
+    margin: 0 0 0 8px;
+  }
 }/*# sourceMappingURL=style.css.map */
