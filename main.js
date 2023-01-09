@@ -1,13 +1,14 @@
 const markAsRead = document.querySelector("header > p");
 const notificationCount = document.querySelector(".notif-count");
-const activeClass = document.querySelectorAll(".active");
+// const activeClass = document.querySelectorAll(".active");
+const activeClasses = Array.from(document.getElementsByClassName("active"));
 const notifications = document.querySelectorAll(".notif");
 
 //To mark all as read.
 markAsRead.addEventListener("click", () => {
   notificationCount.textContent = "0";
-  for (i = 0; i < activeClass.length; i++) {
-    activeClass[i].classList.remove("active");
+  for (i = 0; i < activeClasses.length; i++) {
+    activeClasses[i].classList.remove("active");
   }
 });
 
