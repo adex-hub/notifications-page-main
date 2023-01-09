@@ -47,6 +47,7 @@ main .notif {
   line-height: 25px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 main .notif > img {
   -o-object-fit: contain;
